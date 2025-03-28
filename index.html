@@ -23,32 +23,55 @@
             font-weight: bold;
             color: white;
         }
-        main {
-            margin: auto;
-            background-color: rgb(39, 197, 152);
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .produto{
+            background-color: linear-gradient(to right, #93f8ec, #134a4f, #8B88F2);
             border-radius: 10px;
-            width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .botao{
+            background: linear-gradient(to right, #a53e8d, #ff8dc8);
+            color: white;
             padding: 10px;
-            box-shadow: 5px 5px 15px 2px rgba(113, 57, 115, 0.616);
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
         }
-        h1{
-            color: #0f6e88
+
+        .botao:hover {
+            background: linear-gradient(to right, #c75fb6, #fd9eed);
         }
+        
     </style>
 </head>
 <body>
     <header>Loja de Delícias</header>
-    <main>
-     <h1>Veja meus produtos</h1>
+    <div class="container">
+     <h3>Veja meus produtos</h3>
      <div class="produtos">
-      <h2>Bolo de pote</h2>
+      <h3>Bolo de pote</h3>
+      <img src=" " alt="bolo de pote">
       <p>Parágrafo 1</p>
-      <p>Parágrafo 2</p>
+      <button class="botao">Comprar</button>
 
-      <h2>Palha Italiana</h2>
+      <h3>Palha Italiana</h3>
+      <img src="" alt="palha italiana">
       <p>parágrafo 1</p>
-      <p>parágrafo 2</p>
+      <button class="botao">Comprar</button>
      </div>
-    </main>
+    </div>
 </body>
 </html>
